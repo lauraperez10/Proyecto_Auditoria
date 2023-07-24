@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card bg-white text-black">
+      <div class="card-header pt-5">
+        <h4 class="text-center">
+          OTP Verification
+        </h4>
+      </div>
+      <div class="card-body">
+        <form action="/auth/otp" method="POST">
+          <div class="mb-3">
+            <label for="otp">OTP code:</label>
+            <input
+              type="text"
+              class="form-control bg-white text-black"
+              name="otp"
+              placeholder="Otp code"
+              value="{{otp}}"
+            />
+          </div>
+          <button class="btn btn-success btn-block">
+            Validate
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
